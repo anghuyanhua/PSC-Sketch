@@ -24,6 +24,9 @@ public:
 
     ~Topk_Structure() {
         for (int i = 0; i < w; ++i) {
+            for (int j = 0; j < cell_num; ++j) {
+                delete[] topk_structure[i][j];
+            }
             delete[] topk_structure[i];
         }
         delete[] topk_structure;
