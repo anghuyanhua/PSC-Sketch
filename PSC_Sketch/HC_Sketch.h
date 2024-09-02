@@ -73,7 +73,7 @@ public:
             hc_sketch[hash_idx][empty_cell_index][3] = 0;
             return;
         }
-        // 发生替换
+        // replacement
         hc_sketch[hash_idx][min_val_idx][2] -= 1;
         if (hc_sketch[hash_idx][min_val_idx][2] <= 0) {
             hc_sketch[hash_idx][min_val_idx][0] = src_uint;
