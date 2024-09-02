@@ -12,7 +12,7 @@
 #include <iomanip>
 #include "groundtruth.h"
 
-// PSH Sketch
+// PSC Sketch
 #include "../PSC_Sketch/Experiment.h"
 
 // Primitive Solution
@@ -134,7 +134,7 @@ int main(){
     // Groundtruth Experiment
     auto real_dict = groundtruth(file_path);
 
-    // PSH Sketch Experiment
+    // PSC Sketch Experiment
     for (double m : memory_list) {
         double memory = m * 1024 * 1024 * 8;
         double memory_bloomfilter = memory * 0.35;
